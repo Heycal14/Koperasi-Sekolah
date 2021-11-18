@@ -1,30 +1,15 @@
 <div class="col-lg-3 col-6">
   <!-- small box -->
-  <div class="small-box bg-info">
-    <div class="inner">
-      <h3>150</h3>
-
-      <p>Incoming Orders</p>
-    </div>
-    <div class="icon">
-      <i class="ion ion-bag"></i>
-    </div>
-    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-  </div>
-</div>
-
-<div class="col-lg-3 col-6">
-  <!-- small box -->
   <div class="small-box bg-warning">
     <div class="inner">
-      <h3><?= $total_barang ?></h3>
+      <h3><?= $total_buku ?></h3>
 
-      <p>Goods</p>
+      <p>Buku</p>
     </div>
     <div class="icon">
       <i class="fas fa-cubes"></i>
     </div>
-    <a href="<?=base_url('barang')?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+    <a href="<?=base_url('buku')?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
   </div>
 </div>
 
@@ -32,14 +17,14 @@
   <!-- small box -->
   <div class="small-box bg-success">
     <div class="inner">
-      <h3>150</h3>
+      <h3>3</h3>
 
       <p>User</p>
     </div>
     <div class="icon">
       <i class="fas fa-users"></i>
     </div>
-    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+    <a href="<?=base_url('user')?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
   </div>
 </div>
 

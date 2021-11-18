@@ -24,7 +24,7 @@
         <thead class="text-center">
           <tr>
             <th>No</th>
-            <th>Category Name</th>
+            <th>Nama Kategori</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -67,7 +67,7 @@
 
 
         <div class="form-group">
-          <label>Category Name</label>
+          <label>Nama Kategori</label>
           <input type="text" name="nama_kategori" class="form-control" placeholder="Nama Kategori" required>
         </div>
 

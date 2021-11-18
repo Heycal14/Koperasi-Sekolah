@@ -6,9 +6,9 @@ class M_home extends CI_Model
     public function get_all_data()
     {
         $this->db->select('*');
-        $this->db->from('tbl_barang');
-        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_barang.id_kategori', 'left');
-        $this->db->order_by('id_barang', 'desc');
+        $this->db->from('tbl_buku');
+        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_buku.id_kategori', 'left');
+        $this->db->order_by('id_buku', 'desc');
         return $this->db->get()->result();
     }
 
@@ -20,21 +20,21 @@ class M_home extends CI_Model
         return $this->db->get()->result();
     }
 
-    public function detail_barang($id_barang)
+    public function detail_buku($id_buku)
     {
         $this->db->select('*');
-        $this->db->from('tbl_barang');
-        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_barang.id_kategori', 'left');
-        $this->db->where('id_barang', $id_barang);
+        $this->db->from('tbl_buku');
+        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_buku.id_kategori', 'left');
+        $this->db->where('id_buku', $id_buku);
         
         return $this->db->get()->row(); 
     }
 
-    public function gambar_barang($id_barang)
+    public function gambar_buku($id_buku)
     {
         $this->db->select('*');
         $this->db->from('tbl_gambar');
-        $this->db->where('id_barang', $id_barang);
+        $this->db->where('id_buku', $id_buku);
 
         return $this->db->get()->result();
     }
@@ -47,12 +47,21 @@ class M_home extends CI_Model
         
         return $this->db->get()->row();
     }
-    public function get_all_data_barang($id_kategori)
+    public function get_all_data_buku($id_kategori)
     {
         $this->db->select('*');
-        $this->db->from('tbl_barang');
-        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_barang.id_kategori', 'left');
-        $this->db->where('tbl_barang.id_kategori', $id_kategori);
+        $this->db->from('tbl_buku');
+        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_buku.id_kategori', 'left');
+        $this->db->where('tbl_buku.id_kategori', $id_kategori);
+        return $this->db->get()->result();
+    }
+
+    public function get_keyword($keyword){
+        $this->db->select('*');
+        $this->db->from('tbl_buku');
+        $this->db->like('judul', $keyword);
+        $this->db->or_like('pengarang', $keyword);
+        $this->db->or_like('penerbit', $keyword);
         return $this->db->get()->result();
     }
 }

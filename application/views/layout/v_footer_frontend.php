@@ -4,13 +4,13 @@
 <!-- /.content-wrapper -->
 
 <!-- Main Footer -->
-<footer class="main-footer fixed-bottom">
+<footer class="main-footer">
   <!-- To the right -->
   <div class="float-right d-none d-sm-inline">
-    Anything you want
+    <a href="https://github.com/Heycal14"><i class="fab fa-github"></i></a>
   </div>
   <!-- Default to the left -->
-  <strong>Copyright &copy; 2020-2021 <a href="https://adminlte.io">Fly Code</a>.</strong> All rights reserved.
+  <strong>Copyright &copy; 2021 <a href="https://instagram.com/_kalimm?utm_medium=copy_link">Heycal Rahmandia Putra</a></strong>
 </footer>
 </div>
 <!-- ./wrapper -->

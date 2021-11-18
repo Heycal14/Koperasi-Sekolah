@@ -45,65 +45,23 @@
            </a>
          </li>
          <li class="nav-item">
-           <a href="<?= base_url('barang') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'barang') {
+           <a href="<?= base_url('buku') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'buku') {
                                                                   echo "active";
                                                                 } ?>">
              <i class="nav-icon fas fa-cubes"></i>
              <p>
-               Goods
+               Book
              </p>
            </a>
          </li>
 
          <li class="nav-item">
-           <a href="<?= base_url('gambarbarang') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'gambarbarang') {
+           <a href="<?= base_url('gambarbuku') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'gambarbuku') {
                                                                         echo "active";
                                                                       } ?>">
              <i class="nav-icon fas fa-image"></i>
              <p>
                Item Image
-             </p>
-           </a>
-         </li>
-         <li class="nav-item">
-           <a href="<?= base_url('admin/pesanan_masuk') ?>" class="nav-link <?php if ($this->uri->segment(2) == 'pesanan_masuk' and $this->uri->segment(1)=='admin' ) {
-                                                                        echo "active";
-                                                                      } ?>">
-             <i class="nav-icon fas fa-download"></i>
-             <p>
-               Incoming Orders
-             </p>
-           </a>
-         </li>
-
-         <li class="nav-item has-treeview ">
-           <a href="#" class="nav-link">
-             <i class="nav-icon fas fas fa-th"></i>
-             <p>
-               Starter Pages
-               <i class="right fas fa-angle-left"></i>
-             </p>
-           </a>
-           <ul class="nav nav-treeview active">
-             <li class="nav-item">
-               <a href="#" class="nav-link active">
-                 <i class="far fa-circle nav-icon"></i>
-                 <p>Active Page</p>
-               </a>
-             </li>
-             <li class="nav-item">
-               <a href="#" class="nav-link">
-                 <i class="far fa-circle nav-icon"></i>
-                 <p>Inactive Page</p>
-               </a>
-             </li>
-           </ul>
-         </li>
-         <li class="nav-item">
-           <a href="<?=base_url('admin/setting')?>" class="nav-link">
-             <i class="nav-icon fas fa-wrench"></i>
-             <p>
-               Setting
              </p>
            </a>
          </li>
